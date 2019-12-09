@@ -11,10 +11,10 @@ const Lil = () => {
 
     values: function() {
         const arr = []
-        let path = this.head
-        while(path !== null){
-          arr.push(path.value)
-          path = path.next
+        let current = this.head
+        while(current !== null){
+          arr.push(current.value)
+          current = current.next
         }
         return arr
     },
